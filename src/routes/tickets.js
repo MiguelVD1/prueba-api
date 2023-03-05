@@ -1,6 +1,4 @@
 const { Router } = require('express');
-const express= require('express');
-const { isEqual } = require('underscore');
 const router=Router();
 const underscore = require('underscore'); // le decimos que requerimos de underscore y lo guardamos en una variable 
 
