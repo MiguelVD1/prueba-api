@@ -1,13 +1,13 @@
 [
     {
         "id":"1",
-        "evento ":"algo",
+        "evento":"algo",
         "estado":"Cerrado",
         "fecha":"02/03/2023"
     },
     {
         "id":"2",
-        "evento ":"ip",
+        "evento":"ip",
         "estado":"en espera",
         "fecha":"02/03/2023"
     }

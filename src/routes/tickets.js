@@ -60,18 +60,21 @@ try{
     // obtenemos el id que se desea encontrar
     const id1 = req.params.id;
     //obtenemos los datos que quiero actulizar
-   const evento=req.body;
-   const estado=req.body;
-   const fecha=req.body;
-    if(evento && estado && fecha){
+    // obtenemos del req.boby el el;emenmto especifico que se manda el json
+   const evento=req.body.evento;
+   const estado=req.body.estado;
+   const fecha=req.body.fecha;
+    if(evento && estado && fecha){     
        tictkets.forEach(function(elemnt){
             if(elemnt.id == id1){
                elemnt.evento=evento;
+               elemnt.estado=estado;
+               elemnt.fecha=fecha;
             }
         });
         res.json(tictkets);
     }else{
-        res.status(500).json({error:"hubo un error  la actulizacion"});
+        res.status(500).json({error:"hubo un error en la actulizacion"});
     }
 }catch(err){
         res.status(500).json({error:"hubo un error"});

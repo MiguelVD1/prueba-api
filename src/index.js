@@ -25,6 +25,7 @@ const agrup='/api';
 // le decimos que utlize las rutas que estan en este archivo
 app.use(require('./routes/index.js'));
 app.use(agrup,require('./routes/tickets.js'));
+app.use(agrup,require('./routes/consumo.js'));
 
 
 // le decimos que va estar a la escuccha en en le puerto 3000 y que mande un mensaje por consola y le mandamos el puerto que seteamos o establecimos 
