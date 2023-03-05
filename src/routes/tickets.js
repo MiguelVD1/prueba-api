@@ -77,8 +77,6 @@ try{
 }catch(err){
         res.status(500).json({error:"hubo un error"});
     }
-    
-
 });
 
 
